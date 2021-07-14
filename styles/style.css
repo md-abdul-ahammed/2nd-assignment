@@ -1,0 +1,335 @@
+
+/*=========================================
+         Font Style Start Here 
+==========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*=========================================
+         Font Style end Here 
+==========================================*/
+
+/* Animation is Here */
+@keyframes animatio{
+    0%{
+        transform:translate(0px);
+    }
+     50% {
+         transform: translate(-30px );
+     }
+       75% {
+           transform: translate(30px);
+       }
+     100% {
+         transform: translate(0px);
+     }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*=========================================
+         Header Style Start Here 
+==========================================*/
+.header-menu{
+    background-color: #2d2598;
+}
+.top-area {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 66px;
+}
+.nav-name{
+    margin-right: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    list-style: none;
+}
+.login-area a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+.login-area i{
+    margin-right: 10px;
+}
+.header-content {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+.header-left{
+    width: 48%;
+}
+.header-left h2{
+    color: white;
+    margin-top: 35px;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+.btn-style {
+    display: inline-block;
+    border: 1px solid #e02c6d;
+    background-color: #e02c6d;
+    padding: 10px 20px;
+}
+.btn-style a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn-style i{
+    margin-left: 10px;
+}
+.header-image{
+    width: 54%;
+    animation: sliding 2s ease-in-out 0.1s infinite alternate;
+    animation-play-state: running;
+}
+.header-image img {
+    width: 100%;
+    animation-name: animatio;
+    animation-duration:8s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+/*=========================================
+         Header Style end Here 
+==========================================*/
+/*=========================================
+         Player Information Start Here 
+==========================================*/
+.players-info {
+    background-color: #fff;
+    padding: 60px 30px 60px 70px;
+}
+.player-contents{
+    width: 90%;
+    margin: 0 auto;
+}
+.players-bio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+}
+.players-photo-frame {
+    width: 85%;
+    border-radius: 10px;
+    border: 10px solid #ffffff;
+    box-shadow: 0px 0px 30px grey;
+}
+.player-image img{
+    width: 100%;
+}
+/*=========================================
+         Player Information end Here 
+==========================================*/
+/* ===============================
+    More Players Bio Style Start
+  ================================ */
+.players-bio-area {
+    width: 320px;
+    height: 213px;
+    border: 2px solid #ffffff;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px grey;
+}
+.article-top-title h1{
+    font-size: 20px;
+    text-align: center;
+}
+.article-top-title p{
+    text-align: center;
+}
+.player-details p {
+    font-size: 15px;
+    padding: 5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.players-img img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.player-details {
+    position: absolute;
+    width: 320px;
+    top: 0;
+    display: none;
+}
+
+h3 {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.players-bio-area:hover .player-details {
+    display: block;
+    background-color: rgba(0, 0, 139, 0.281);
+    height: 208px;
+    cursor: pointer;
+    color: white;
+}
+
+.players-bio-area:hover .players-img {
+    transform: scale(1.5);
+    transition: transform 5s ease-in-out;
+}
+/*=========================
+   More Players Bio End
+===========================*/
+
+/*===========================
+   Footer Style Start here
+=============================*/
+.footer-area{
+    background-color: #ffffff;
+}
+.footer-logo {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2%;
+}
+.footer-logo img{
+    width: 30%;
+}
+.fab, .far {
+    font-weight: 400;
+    margin-right: 23px;
+    border: 2px solid white;
+    padding: 8px;
+    box-shadow: 0px 0px 20px grey;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #e02c6d;
+}
+.footer-area{
+    text-align: center;
+}
+.footer-social-icon{
+    padding: 30px;
+}
+.footer-bottom p{
+    color: #000000;
+}
+.footer-bottom{
+    padding-bottom: 10px;
+}
+
+/*===========================
+   Footer Style Start end
+=============================*/
+
+/*=================================
+    Responsive Mobile Area Start
+===================================*/
+
+@media only screen and (max-width: 688px) {
+        .menu-area{
+                display: none;
+            }
+            .header-left h2 {
+                font-size: 50px;
+                margin-top: 0;
+            }
+        .header-content{
+            flex-direction: column;
+        }
+        .players-info {
+            padding: 40px 0px 30px 30px;
+        }
+        .players-bio {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .header-image img {
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 20%;
+        }
+        .header-image{
+            width: 100%;
+        }
+        .footer-logo img {
+            width: 75%;
+        }
+        .fab, .far {
+            margin-right: 13px;
+            box-shadow: 0px 0px 20px grey;
+            padding: 3px;
+            border-radius: 50%;
+            font-size: 35px;
+            color: #e02c6d;
+        }
+}
+/*=================================
+    Responsive Mobile end Start
+===================================*/
+/*=================================
+    Responsive Tablet Area Start
+===================================*/
+@media only screen and (min-width: 689px) and (max-width: 991px){
+    .nav-name {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .top-area {
+        max-width: 83%;
+        padding: 32px;
+    }
+        .players-bio {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+        }
+        .header-image img {
+            width: 90%;
+            margin-left: 13%;
+            margin-top: 20%;
+        }
+        .header-left h2 {
+            font-size: 37px;
+            margin-bottom: 20px;
+        }
+        .header-content {
+            align-items: center;
+        }
+        .players-info {
+            padding: 50px 0px 40px 20px;
+        }
+        .footer-logo {
+            padding-top: 2%;
+        }
+        .footer-logo img {
+            width: 50%;
+        }
+        .footer-social-icon {
+            padding-top: 22px;
+            padding-bottom: 35px;
+        }
+        .fab, .far {
+            margin-right: 10px;
+            padding: 8px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px grey;
+            font-size: 33px;
+            color: #e02c6d;
+        }
+}
+
+/*============================
+   Responsive Tablet Area end
+==============================*/
